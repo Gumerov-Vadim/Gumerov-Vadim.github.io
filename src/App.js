@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useEffect,useState } from 'react';
+import "./App.css"
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -34,7 +35,7 @@ export default function App() {
   return (
     <>
     <header>
-        <span>возьмите меня стажером :-) </span>
+        <span>Поиск</span>
         <input onChange={search} value={input}></input>
     </header>
     <TableContainer className='table' component={Paper}>
